@@ -6,7 +6,7 @@ public class NumberButtons {
     private static int y = 0;
 
     public static JButton[] createButtons() {
-        JButton[] arrayOfButtons = new JButton[9];
+        JButton[] arrayOfButtons = new JButton[11];
 
         JButton one = new JButton("1");
         JButton two = new JButton("2");
@@ -17,6 +17,8 @@ public class NumberButtons {
         JButton seven = new JButton("7");
         JButton eight = new JButton("8");
         JButton nine = new JButton("9");
+        JButton zero = new JButton("0");
+        JButton decimal = new JButton(".");
 
         one.setBackground(Color.orange);
         one.setSize(new Dimension(100, 50));
@@ -54,6 +56,14 @@ public class NumberButtons {
         nine.setSize(new Dimension(100, 50));
         nine.setLocation(x = x + 105, y = y);
 
+        zero.setBackground(Color.orange);
+        zero.setSize(new Dimension(100, 50));
+        zero.setLocation(x = x - 210, y = y + 55);
+
+        decimal.setBackground(Color.orange);
+        decimal.setSize(new Dimension(100, 50));
+        decimal.setLocation(x = x + 105, y = y);
+
         arrayOfButtons[0] = one;
         arrayOfButtons[1] = two;
         arrayOfButtons[2] = three;
@@ -63,6 +73,8 @@ public class NumberButtons {
         arrayOfButtons[6] = seven;
         arrayOfButtons[7] = eight;
         arrayOfButtons[8] = nine;
+        arrayOfButtons[9] = zero;
+        arrayOfButtons[10] = decimal;
 
         return arrayOfButtons;
     }

@@ -30,7 +30,7 @@ public class Frame extends Canvas {
             frame.add(labels[i]);
         }
 
-        for (int i = 0; i < 9; i++) {
+        for (int i = 0; i < 11; i++) {
             frame.add(arrayOfButtons[i]);
         }
 
@@ -231,6 +231,18 @@ public class Frame extends Canvas {
                     internalValue1.add(9);
                 else
                     internalValue2.add(9);
+
+            }
+        });
+
+        arrayOfButtons[9].addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                labels[0].setText(labels[0].getText() + 0);
+                if (flag)
+                    internalValue1.add(0);
+                else
+                    internalValue2.add(0);
 
             }
         });

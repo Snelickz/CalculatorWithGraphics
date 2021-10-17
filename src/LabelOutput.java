@@ -12,13 +12,13 @@ public class LabelOutput {
         typing.setBackground(Color.gray);
         typing.setOpaque(true);
         typing.setSize(new Dimension(300, 30));
-        typing.setLocation(10, 180);
+        typing.setLocation(10, 230);
         typing.setHorizontalAlignment(SwingConstants.CENTER);
 
         output.setBackground(Color.gray);
         output.setOpaque(true);
         output.setSize(new Dimension(240, 30));
-        output.setLocation(40, 220);
+        output.setLocation(40, 270);
         output.setHorizontalAlignment(SwingConstants.CENTER);
 
         label[0] = typing;
