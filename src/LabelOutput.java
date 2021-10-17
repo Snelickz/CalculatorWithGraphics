@@ -19,7 +19,7 @@ public class LabelOutput {
         output.setOpaque(true);
         output.setSize(new Dimension(240, 30));
         output.setLocation(40, 220);
-        typing.setHorizontalAlignment(SwingConstants.CENTER);
+        output.setHorizontalAlignment(SwingConstants.CENTER);
 
         label[0] = typing;
         label[1] = output;
